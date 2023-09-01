@@ -36,7 +36,9 @@ while(system):
                                 msl.append(ms)
                                 mnl.append(mn*mm)
                                 print(3)
+                                print(ms, mnl[i+1])
                                 break
+                print(4)
 
                 print(ms, mn, mm, msl, mnl)
         elif systemMenu == 3:
