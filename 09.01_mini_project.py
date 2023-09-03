@@ -8,6 +8,7 @@ menu = {'김밥' : {'원조김밥' : 2500, '참치김밥' : 3000, '김치김밥'
 system = True
 msl = [0]
 mnl = [0]
+nom = [0]
 while(system):
         systemMenu = int(input('시스템 메뉴를 고르시오. 1. 메뉴판보기 2. 주문하기 3. 결제하기 4. 영수증보기'))
 
@@ -24,23 +25,17 @@ while(system):
                                 if list(list(menu.values())[i])[j] == ms:
                                         a = list(menu.values())[i]
                                         mm = a[ms] ## 찾은 가격
-                                        print(1)
-                                        break
-                    
-                for i in range(len(msl)): 
-                        if msl[i] == ms:
-                                mnl[i] = mnl[i] + mn*mm   ###### 이부분 한참 잘못됨 주말동안 뜯어봐
-                                print(2)
-                                break
-                        else: 
-                                msl.append(ms)
-                                mnl.append(mn*mm)
-                                print(3)
-                                print(ms, mnl[i+1])
-                                break
-                print(4)
-
-                print(ms, mn, mm, msl, mnl)
+                
+                
+                if ms in msl:
+                        found = msl.index(ms)
+                        mnl[found] = mnl[found] + mn*mm
+                        nom[found] = nom[found] + mn
+                elif ms not in msl:
+                        msl.append(ms)
+                        mnl.append(mn*mm)
+                        nom.append(mn)
+                        
         elif systemMenu == 3:
                 print("결제를 시작합니다. 총 결제금액 {0} 원 입니다".format(sum(mnl)))
                 pay = int(input('결제는 무엇으로 하시겠습니까? 1. 현금 / 2. 카드'))
@@ -50,3 +45,22 @@ while(system):
 
                 else:
                         print("결제완료되셨습니다.")
+
+
+        elif systemMenu == 4:
+                print("===================================================")
+                print("=============     종합  영수증     ================")
+                print("===================================================")
+                for i, j, k in zip(msl, mnl, nom):
+                        if i == 0 and j == 0 and k == 0:
+                                pass
+                        else:
+                                print(f"==  {i:^10}     X    {k}개   {j:^8}원    ==")
+                if pay == 1:
+                        print(f"==             입금 : {pm:^12}원             ==")
+                        print(f"==             총액 : {sum(mnl):^12}원             ==")
+                        print(f"==             잔액 : {pm - sum(mnl):^12}원             ==")
+                        print("===================================================")
+                else:
+                        print(f"==             총액 : {sum(mnl):^12}원             ==")
+                        print("===================================================")
