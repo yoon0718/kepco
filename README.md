@@ -1,3 +1,4 @@
 # python
+# mysql
 
-python basic step with KEPCO
+study with KEPCO
