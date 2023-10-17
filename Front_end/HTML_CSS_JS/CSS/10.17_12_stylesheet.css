@@ -1,0 +1,15 @@
+body {
+  font-family: "돋움";
+}
+h3 {
+  font-size: 25px;
+}
+p {
+  line-height: 180%;
+}
+span {
+  font-style: italic;
+  font-weight: bold;
+  color: yellow;
+  background-color: green;
+}
