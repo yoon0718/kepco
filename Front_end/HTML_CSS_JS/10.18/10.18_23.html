@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/10.18_23_stylesheet.css" />
+    <title>10.18_23</title>
+  </head>
+  <body>
+    <a href="../index_css.html">목록보기</a>
+    <h3>회원가입 폼</h3>
+    <form>
+      <ul id="join">
+        <li>
+          <ul class="cols">
+            <li class="col1">아이디</li>
+            <li class="col2"><input type="text" /></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="cols">
+            <li class="col1">비밀번호</li>
+            <li class="col2"><input type="password" /></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="cols">
+            <li class="col1">비밀번호 확인</li>
+            <li class="col2"><input type="password" /></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="cols">
+            <li class="col1">이름</li>
+            <li class="col2"><input type="text" /></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="cols">
+            <li class="col1">이메일</li>
+            <li class="email"><input type="text" /> @</li>
+            <li>
+              <select>
+                <option>직접 입력</option>
+                <option>naver.com</option>
+                <option>hanmail.net</option>
+                <option>gmail.com</option>
+              </select>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="cols">
+            <li class="col1">이메일 수신</li>
+            <li>
+              <input type="radio" name="email" checked /> 비수신 &nbsp;<input
+                type="radio"
+                name="email"
+              />
+              수신
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="cols">
+            <li class="col1">가입 경로</li>
+            <li>
+              <input type="checkbox" name="route1" /> 친구추천 &nbsp;
+              <input type="checkbox" name="route2" /> 인터넷검색 &nbsp;
+              <input type="checkbox" name="route3" checked /> 기타 &nbsp;
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="cols">
+            <li class="col1 hello">인사말</li>
+            <li><textarea></textarea></li>
+          </ul>
+        </li>
+      </ul>
+      <div id="buttons">
+        <button type="submit">저장하기</button>
+        <button type="reset">취소하기</button>
+      </div>
+    </form>
+  </body>
+</html>
