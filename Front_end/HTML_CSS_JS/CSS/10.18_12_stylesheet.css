@@ -1,0 +1,11 @@
+.green_bold {
+  color: green;
+  font-weight: bold;
+}
+.red_underline {
+  color: red;
+  text-decoration: underline;
+}
+p {
+  line-height: 180%;
+}

@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+div,
+span {
+  border: solid 1px black;
+  background-color: yellow;
+}
+#a {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+#b {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+#c {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}

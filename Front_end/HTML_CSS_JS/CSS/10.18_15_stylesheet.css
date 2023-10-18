@@ -1,0 +1,9 @@
+body {
+  background-image: url("../../images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+p {
+  width: 400px;
+  line-height: 180%;
+}

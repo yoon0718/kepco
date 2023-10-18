@@ -1,0 +1,19 @@
+span {
+  color: red;
+  border: solid 1px red;
+}
+div {
+  background-color: #eeeeee;
+}
+#text1 {
+  display: inline;
+}
+#text2 {
+  display: block;
+}
+#text3 {
+  display: inline-block;
+}
+#text4 {
+  display: none;
+}

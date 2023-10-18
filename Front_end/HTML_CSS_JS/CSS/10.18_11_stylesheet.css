@@ -1,0 +1,15 @@
+#intro {
+  width: 120px;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 3px 3px 10px #888888;
+}
+#p1 {
+  line-height: 150%;
+}
+#p2 {
+  border: solid 1px #cccccc;
+  padding: 20px;
+  line-height: 200%;
+}

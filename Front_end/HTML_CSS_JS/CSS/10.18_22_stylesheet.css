@@ -1,0 +1,11 @@
+#col1 {
+  width: 80px;
+}
+input {
+  width: 150px;
+  height: 25px;
+}
+#button {
+  height: 66px;
+  margin-left: 3px;
+}

@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+h3,
+#join {
+  margin: 20px 0 0 30px;
+}
+#join {
+  border-top: solid 1px #cccccc;
+  border-bottom: solid 1px #cccccc;
+  padding: 20px;
+  width: 480px;
+}
+.cols {
+  padding: 5px;
+}
+.cols li {
+  display: inline-block;
+}
+.col1 {
+  width: 120px;
+}
+.col2 input,
+select {
+  width: 200px;
+  height: 28px;
+}
+.email input {
+  width: 100px;
+  height: 25px;
+}
+textarea {
+  width: 328px;
+  height: 100px;
+}
+.hello {
+  vertical-align: top;
+}
+#buttons {
+  width: 510px;
+  text-align: right;
+}
+#buttons button {
+  padding: 8px 20px;
+  margin-top: 20px;
+}
