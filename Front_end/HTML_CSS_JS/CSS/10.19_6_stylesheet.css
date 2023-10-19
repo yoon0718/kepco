@@ -1,0 +1,57 @@
+#wrap {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: rgb(160, 160, 160);
+}
+header {
+  margin: 10px;
+  height: 60px;
+  border: solid 1px black;
+  background-color: white;
+}
+
+#main {
+  margin: 10px;
+  height: 350px;
+  border: solid 1px black;
+  background-color: white;
+}
+
+#contents {
+  margin: 20px;
+  width: 600px;
+  height: 300px;
+  float: left;
+}
+section {
+  margin: 20px 40px;
+  height: 120px;
+  border: solid 1px black;
+}
+article {
+  margin: 50px 10px 5px 10px;
+  border: solid 1px black;
+}
+aside {
+  margin: 30px 50px 30px 10px;
+  width: 200px;
+  height: 280px;
+  float: right;
+  border: solid 1px black;
+}
+
+footer {
+  margin: 10px;
+  border: solid 1px black;
+  clear: both;
+  background-color: white;
+}
+
+header,
+#main,
+footer,
+section,
+aside {
+  font-size: 20px;
+  text-align: center;
+}

@@ -1,0 +1,14 @@
+#box1,
+#box2,
+#box3 {
+  width: 400px;
+  margin: 0 auto;
+  border: solid 1px red;
+  padding: 20px;
+}
+#box2 {
+  text-align: right;
+}
+#box3 {
+  text-align: center;
+}

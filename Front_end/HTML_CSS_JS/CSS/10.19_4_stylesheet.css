@@ -1,0 +1,33 @@
+#wrap {
+  width: 800px;
+  margin: 0 auto;
+}
+#header {
+  height: 60px;
+  background-color: #dddddd;
+}
+#sidebar {
+  width: 200px;
+  height: 300px;
+  float: left;
+  background-color: orange;
+}
+#section {
+  width: 600px;
+  height: 300px;
+  float: right;
+  background-color: skyblue;
+}
+#footer {
+  clear: both;
+  height: 60px;
+  background-color: #dddddd;
+}
+#header,
+#sidebar,
+#section,
+#footer {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 30px;
+}

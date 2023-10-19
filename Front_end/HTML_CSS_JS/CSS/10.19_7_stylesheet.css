@@ -1,0 +1,13 @@
+#b {
+  position: relative;
+  left: 60px;
+  top: 30px;
+}
+#a,
+#b,
+#c {
+  width: 100px;
+  height: 60px;
+  background-color: yellow;
+  border: solid 1px black;
+}

@@ -1,0 +1,13 @@
+#box {
+  width: 10px;
+  height: 1000px;
+  background-color: green;
+}
+#a {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: red;
+  padding: 10px 20px;
+  color: white;
+}
