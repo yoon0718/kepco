@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/10.20_10_stylesheet.css" />
+    <title>10.20_10</title>
+  </head>
+  <body>
+    <div style="border: solid 1px black">
+      <p>색상변경우선순위</p>
+      <li>1 !important</li>
+      <li>태그에 직접</li>
+      <li>같은css에 있을 경우 맨 마지막 적용</li>
+    </div>
+    <div style="border: solid 1px black">
+      <p>색상변경우선순위</p>
+      <p class="p">색상변경우선순위(선택자 우선 순위)</p>
+      <p id="p" class="p">색상변경우선순위(선택자 우선 순위)</p>
+      <li>1. id 선택자</li>
+      <li>2. 클래스 선택자</li>
+      <li>3. 늦게 작성된 코드</li>
+    </div>
+  </body>
+</html>

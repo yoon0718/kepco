@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      #mymain {
+        display: inline;
+      }
+    </style>
+    <title>10.20_5</title>
+  </head>
+  <body>
+    <div id="mymain">
+      <div id="my-form">
+        <form action="https://google.com/search" method="get">
+          <input type="text" name="q" />
+        </form>
+      </div>
+      <div class="dropdown">
+        <button
+          class="btn btn-primary dropdown-toggle"
+          type="button"
+          data-toggle="dropdown"
+        >
+          구글 검색<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="https://google.com/search?q=고양이">고양이</a></li>
+          <li><a href="https://google.com/search?q=강아지">강아지</a></li>
+          <li>
+            <a href="https://google.com/search?q=벌쏘인강아지">벌쏘인강아지</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
