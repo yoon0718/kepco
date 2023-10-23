@@ -1,0 +1,10 @@
+div:nth-child(1) {
+  height: 100px;
+  width: 50px;
+  background-color: aqua;
+}
+div:nth-child(2) {
+  height: 50%;
+  width: 50%;
+  background-color: beige;
+}

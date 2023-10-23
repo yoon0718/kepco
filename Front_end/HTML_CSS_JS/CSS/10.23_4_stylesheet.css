@@ -1,0 +1,8 @@
+h3 + ul {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+h3 ~ ul {
+  border: 2px solid green;
+}

@@ -1,0 +1,18 @@
+.bg1 {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  border: solid 3px yellow;
+  border-radius: 106px;
+  background-color: lightgreen;
+  background-image: url("http://ggoreb.com/images/star.png");
+}
+.bg2 {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  border: solid 3px red;
+  border-radius: 106px;
+  background-color: lightgreen;
+  background-image: url("http://ggoreb.com/images/heart.png");
+}

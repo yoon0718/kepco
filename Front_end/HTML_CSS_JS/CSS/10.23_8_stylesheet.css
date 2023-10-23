@@ -1,0 +1,6 @@
+.child > u:nth-child(odd) {
+  background-color: coral;
+}
+.type > u:nth-of-type(2n) {
+  background-color: coral;
+}

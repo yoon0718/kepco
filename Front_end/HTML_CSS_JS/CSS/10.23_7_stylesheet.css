@@ -1,0 +1,9 @@
+.r:focus {
+  background: yellow;
+  color: red;
+}
+
+.g:focus {
+  background: yellow;
+  color: green;
+}

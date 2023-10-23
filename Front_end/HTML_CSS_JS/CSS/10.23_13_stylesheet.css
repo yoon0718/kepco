@@ -1,0 +1,6 @@
+p::first-line {
+  font-size: 1.4rem;
+}
+p::first-letter {
+  background-color: aqua;
+}

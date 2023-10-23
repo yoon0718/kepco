@@ -1,0 +1,21 @@
+a::before {
+  content: "앵커 태그 - ";
+  color: skyblue;
+}
+a:active::after {
+  content: " (" attr(href) ")";
+  color: purple;
+}
+a::selection {
+  background-color: cyan;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: blue;
+}
+a:active {
+  color: yellow;
+}

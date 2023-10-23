@@ -1,0 +1,9 @@
+body > h3 {
+  color: violet;
+}
+div > ul > li {
+  background-color: khaki;
+}
+div > p {
+  background-color: yellowgreen;
+}

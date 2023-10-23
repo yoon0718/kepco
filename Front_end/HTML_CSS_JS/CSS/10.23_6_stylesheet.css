@@ -1,0 +1,15 @@
+a {
+  transition: 1.5s;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  background-color: gold;
+}
+a:active {
+  background-color: aqua;
+}
+a:visited {
+  opacity: 0.7;
+  color: gray;
+}

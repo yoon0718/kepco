@@ -1,0 +1,10 @@
+*[data-size="large"] {
+  font-size: 1.5rem;
+}
+*[data-size="small"] {
+  font-size: 0.7rem;
+}
+li[bg="yellow"] {
+  background-color: yellow;
+  color: red;
+}

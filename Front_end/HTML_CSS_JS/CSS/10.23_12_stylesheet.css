@@ -1,0 +1,21 @@
+span[desc] {
+  position: relative;
+  color: blue;
+  cursor: help;
+  text-decoration: underline;
+}
+span[desc]:hover::after,
+span[desc]:focus::after {
+  content: attr(desc);
+  position: absolute;
+  left: 0;
+  top: 24px;
+  min-width: 200px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  background-color: #ffffcc;
+  color: black;
+  padding: 12px;
+  font-size: 14px;
+  z-index: 1;
+}

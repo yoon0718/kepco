@@ -1,0 +1,27 @@
+h5[title] {
+  background-color: red;
+}
+h5[class~="header"] {
+  background-color: yellow;
+}
+h5[class^="con"] {
+  background-color: lightblue;
+}
+h5[class$="esc"] {
+  background-color: orange;
+}
+h5[class*="tiv"] {
+  background-color: aqua;
+}
+input[type="text"] {
+  width: 50px;
+}
+input[type="password"] {
+  background-color: red;
+}
+input[type="tel"] {
+  font-size: 30px;
+}
+input[type="search"] {
+  font-style: italic;
+}

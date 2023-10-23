@@ -1,0 +1,9 @@
+input + span {
+  display: none;
+}
+input:checked + span {
+  display: inline-block;
+}
+input:checked + span + span {
+  display: none;
+}

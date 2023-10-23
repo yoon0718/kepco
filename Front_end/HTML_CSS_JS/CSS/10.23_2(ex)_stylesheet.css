@@ -1,0 +1,18 @@
+body > div {
+  font-size: 2rem;
+}
+ul > li {
+  background-color: khaki;
+  width: 250px;
+}
+ul > li > ul {
+  padding: 0px;
+}
+ul > li > ul > li {
+  font-style: italic;
+  text-decoration: line-through;
+  list-style: none;
+}
+li > div {
+  border: 3px solid coral;
+}

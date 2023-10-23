@@ -1,0 +1,9 @@
+html {
+  font-size: 16px;
+}
+.em li {
+  font-size: 1.3em;
+}
+.rem li {
+  font-size: 1.3rem;
+}
