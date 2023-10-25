@@ -1,15 +1,48 @@
 .image {
+  width: 200px;
+  margin: 5px;
   background-color: beige;
   padding: 10px;
   border: solid 0.3px lightgray;
   display: inline-block;
+}
+img {
+  width: 180px;
+  height: 160px;
 }
 table {
   text-align: center; /* 글자정렬 */
   font-size: 1.5em; /* 글자크기 */
   border-spacing: 0; /* 테두리 두께 없애기 */
 }
-table,
 td {
+  padding: 10px;
   border: 1px solid black; /* 테두리 */
+}
+#title {
+  text-align: left;
+}
+#title > p:nth-child(1) {
+  margin: 10px 0px 10px 0px;
+  font-size: 1rem;
+  color: lightgrey;
+}
+#title > p:nth-child(2) {
+  margin: 10px 0px 10px 0px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  border-bottom: solid 2px lightgray;
+}
+
+#col1 {
+  display: inline-block;
+  font-size: 1rem;
+  color: lightgray;
+  text-align: left;
+}
+
+#col2 {
+  display: inline-block;
+  font-size: 1rem;
+  text-align: right;
 }
