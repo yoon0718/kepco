@@ -1,0 +1,21 @@
+* {
+  font-weight: bold;
+}
+p {
+  font-size: 1.5em;
+}
+.a {
+  font-family: "돋움", "Dotum";
+}
+.b {
+  font-family: "굴림", "Gulim";
+}
+.c {
+  font-family: "바탕", "Batang";
+}
+.d {
+  font-family: "궁서", "Gungsuh";
+}
+.e {
+  font-family: "Jua";
+}

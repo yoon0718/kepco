@@ -1,0 +1,44 @@
+.rowcolumn {
+  display: inline-block;
+}
+.flex-container,
+.flex-container1,
+.flex-container2,
+.flex-container3 {
+  width: 350px;
+  height: 100px;
+  display: flex;
+  background-color: lightgrey;
+  flex-direction: row;
+}
+.flex-container5,
+.flex-container6,
+.flex-container7,
+.flex-container8 {
+  width: 350px;
+  height: 100px;
+  display: flex;
+  background-color: lightgrey;
+  flex-direction: column;
+}
+.flex-container,
+.flex-container5 {
+  align-items: flex-start;
+}
+.flex-container1,
+.flex-container6 {
+  align-items: flex-end;
+}
+.flex-container2,
+.flex-container7 {
+  align-items: center;
+}
+.flex-container3,
+.flex-container8 {
+  align-items: stretch;
+}
+
+.flex-item {
+  background-color: lightcyan;
+  border: 1px solid red;
+}

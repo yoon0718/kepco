@@ -1,0 +1,9 @@
+.box {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+}
+h3 {
+  clear: both;
+}

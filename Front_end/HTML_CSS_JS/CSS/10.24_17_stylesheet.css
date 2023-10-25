@@ -1,0 +1,13 @@
+.title {
+  text-align: center;
+  color: lightpink;
+}
+a {
+  text-decoration: none;
+}
+p {
+  text-indent: 10px;
+  line-height: 1.8;
+  white-space: pre-line;
+  text-align: right;
+}

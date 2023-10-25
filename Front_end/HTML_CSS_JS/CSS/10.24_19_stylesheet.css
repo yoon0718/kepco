@@ -1,0 +1,6 @@
+p {
+  background-color: lightgray;
+  width: 200px;
+  height: 100px;
+  overflow: auto;
+}

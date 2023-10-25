@@ -1,0 +1,39 @@
+.flex-container {
+  display: flex;
+  background-color: lightgrey;
+}
+
+.flex-item {
+  background-color: lightcyan;
+  border: 1px solid red;
+}
+.flex-container1 {
+  display: flex;
+  background-color: lightgrey;
+  flex-direction: row-reverse;
+}
+.flex-container2 {
+  display: flex;
+  background-color: lightgrey;
+  flex-direction: column;
+}
+.flex-container3 {
+  display: flex;
+  background-color: lightgrey;
+  flex-direction: column-reverse;
+}
+.flex-item1 {
+  width: 400px;
+  background-color: lightcyan;
+  border: 1px solid red;
+}
+.flex-container4 {
+  display: flex;
+  background-color: lightgrey;
+  flex-wrap: wrap;
+}
+.flex-container5 {
+  display: flex;
+  background-color: lightgrey;
+  flex-wrap: wrap-reverse;
+}

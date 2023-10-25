@@ -1,0 +1,40 @@
+div {
+  display: inline-block;
+}
+div:nth-child(1) {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+div:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  visibility: visible;
+}
+div:nth-child(3) {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+div:nth-child(6) {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+div:nth-child(7) {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  visibility: hidden;
+}
+div:nth-child(8) {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  opacity: 0; /*투명도*/
+  transition: 2s; /*나타낼 시간*/
+}
+div:nth-child(8):hover {
+  opacity: 1;
+}
