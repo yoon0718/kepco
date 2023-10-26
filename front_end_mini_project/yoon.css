@@ -1,0 +1,55 @@
+.main {
+  height: 708.333px;
+  width: 1690.67px;
+}
+.footer {
+  padding: 0px 16px 0px 16px;
+  height: 135px;
+  width: 1658.67px;
+  border: solid 1px black;
+}
+.first_frame {
+  height: 644px;
+  width: 1690.67px;
+  margin-top: 32px;
+  padding-bottom: 32px;
+}
+.content {
+  justify-content: center;
+  display: flex;
+}
+.left {
+  margin: 20px 32px 12px 0px;
+  height: 581px;
+  width: 380px;
+}
+.right {
+  margin-top: 12px;
+  height: 632.333px;
+  width: 350px;
+  border-top-width: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login_first {
+  margin-bottom: 10px;
+  padding: 10px 0px 10px 0px;
+  height: 376.323px;
+  width: 348.667px;
+}
+.login_second {
+  margin-bottom: 10px;
+  padding: 10px 0px 10px 0px;
+  height: 41px;
+  width: 348.667px;
+}
+.login_third {
+  height: 94.333px;
+  width: 350px;
+}
+.right > div {
+  border: solid 1px lightgrey;
+  display: flex;
+  flex-direction: column;
+}
