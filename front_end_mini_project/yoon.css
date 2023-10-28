@@ -5,19 +5,19 @@ body {
   border: solid 1px lightgrey;
 }
 .main {
-  height: 660px;
+  height: 708.333px;
   width: auto;
 }
 .footer {
   padding: 0px 16px 0px 16px;
-  height: 115px;
+  height: 135px;
   width: auto;
   text-align: center;
 }
 .first_frame {
   height: 644px;
   width: auto;
-  margin-top: 20px;
+  margin-top: 60px;
   padding-bottom: 32px;
 }
 .content {
@@ -28,27 +28,7 @@ body {
   margin: 20px 32px 12px 0px;
   height: 581px;
   width: 380px;
-  flex-direction: column;
-}
-#imgfirst {
-  position: absolute;
-  height: 581px;
-  width: 380px;
-}
-#imageContainer {
-  height: 581px;
-  width: 380px;
-  position: relative;
-}
-
-.fade-in-out {
-  height: 581px;
-  width: 380px;
-  position: absolute;
-  top: px;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+  flex-direction: row;
 }
 .right {
   margin-top: 12px;
