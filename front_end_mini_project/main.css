@@ -60,7 +60,7 @@ body {
 }
 .page {
   padding: 22px 0px 0px 0px;
-  height: 2000px;
+  height: auto;
   width: 1568px;
   flex-direction: row;
 }
@@ -96,16 +96,69 @@ button {
   margin: 4px 0px 8px 0px;
   height: 56px;
   width: 56px;
-  border: 2px solid red;
-  border-radius: 53px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(to right, red 0%, orange 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 .user_story > div > button > div > div:nth-child(1) > img {
   padding: 1.5px;
   height: 53px;
   width: 53px;
-  border-radius: 53px;
+  border-radius: 50%;
+}
+.page_content_main > div > article > div {
+  height: 691.333px;
+  width: 470px;
+  padding-bottom: 16px;
+  border-bottom: solid 0.667px lightgray;
+  border: solid 1px black;
+  margin-bottom: 20px;
+}
+.page_content_main_title {
+  height: 37px;
+  width: 466px;
+  padding: 0px 0px 12px 4px;
 }
 .page_sub2 {
   padding: 0px 0px 0px 64px;
+  height: 524px;
   width: 319px;
+}
+.page_sub2 > div {
+  height: 548px;
+  width: 319px;
+  margin-top: 36px;
+}
+.page_sub2_my {
+  height: 44px;
+  width: 287px;
+  padding: 0px 16px;
+}
+.img_size {
+  height: 44px;
+  width: 56px;
+}
+.name {
+  height: 36px;
+  width: 195px;
+  padding: 4px 0px;
+}
+.change {
+  height: 11px;
+  width: 36px;
+  padding: 16.5px;
+}
+.page_sub2_suggestion {
+  height: 351px;
+  width: 319px;
+  margin: 24px 0px 8px 0px;
+}
+.page_sub2_footer {
+  height: 113px;
+  width: 287px;
+  padding: 0px 16px;
+  margin: 0px 0px 8px 0px;
 }
