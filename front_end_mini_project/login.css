@@ -5,7 +5,7 @@ body {
   border: solid 1px lightgrey;
 }
 .main {
-  height: auto;
+  height: 660px;
   width: auto;
 }
 .footer {
@@ -15,11 +15,10 @@ body {
   text-align: center;
 }
 .first_frame {
-  height: 724px;
+  height: 644px;
   width: auto;
-  margin-top: 40px;
+  margin-top: 20px;
   padding-bottom: 32px;
-  align-items: center;
 }
 .content {
   justify-content: center;
@@ -104,23 +103,15 @@ body {
   border: solid 1px lightgray;
   border-radius: 2px;
   background-color: rgb(250, 250, 250);
-  position: relative;
 }
-.idpassword_a > i {
-  position: absolute;
-  left: 75%;
-  top: 27px;
-  color: orange;
-}
+
 .inputid {
   font-size: 12px;
   background: rgb(250, 250, 250);
-  border: none;
-  margin: 0px;
+  border: 0;
+  margin: o;
   padding: 9px 0px 7px 8px;
   width: 255px;
-  border-color: white;
-  outline: none;
 }
 .loginbutton {
   margin: 8px 40px;
