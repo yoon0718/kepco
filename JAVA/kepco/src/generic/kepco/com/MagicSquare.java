@@ -1,7 +1,10 @@
 package generic.kepco.com;
 
 public class MagicSquare {
-	int num = 9;
+	int num;
+	public MagicSquare(int num) {
+		this.num=num;
+	}	
 	public void make() {
 		int[][] mabAry = new int[num][num];
 		int x = 0;
@@ -36,7 +39,8 @@ public class MagicSquare {
 		}
 	}
 	public static void main(String[] args) {
-		new MagicSquare().make();
+		MagicSquare mb=new MagicSquare(9);		
+		mb.make();
 
 	}
 
