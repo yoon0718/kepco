@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      class Animal {
+        //부모 클래스(super class)
+        constructor(name) {
+          this.name = name;
+          console.log();
+        }
+        speak() {
+          console.log(`${this.name} makes a noise`);
+        }
+      }
+      //자식 클래스(sub class)
+      class Dog extends Animal {}
+      //override
+      class Cat extends Animal {
+        constructor(name) {
+          super(name);
+        }
+        speak() {
+          console.log(`Override => ${this.name} 야옹`);
+        }
+      }
+
+      const dog = new Dog("hahahah");
+      console.log(dog.name);
+      dog.speak();
+      const cat = new Cat("yo");
+      console.log(cat.name);
+      cat.speak();
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>

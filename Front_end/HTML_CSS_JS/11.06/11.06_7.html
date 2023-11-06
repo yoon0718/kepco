@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      //반복문을 사용하여 article 객체가 가지고 있는 모든 속성들의 값 출력하기
+      const article = {
+        num: 1,
+        title: "A",
+        reply: [
+          { num: 3, title: "A-3" },
+          { num: 2, title: "A-2" },
+          { num: 1, title: "A-1" },
+        ],
+      };
+      for (const key in article) {
+        console.log(article[key]);
+      }
+      //속성 중 bathroom을 제거하고 animals 배열 ['개', '고양이'] 속성 추가하기
+      const house = {
+        bathroom: 1,
+        room: 2,
+        address: ["제주도", "제주시", "연동"],
+        persons: [{ name: "kim" }, { name: "lee" }],
+      };
+      delete house.bathroom;
+      house.animals = ["개", "고양이"];
+      for (const key in house) {
+        console.log(house[key]);
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>

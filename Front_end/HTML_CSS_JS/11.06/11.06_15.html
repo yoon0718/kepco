@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      //join(separator?: string)
+      const fruits = ["apple", "banana", "orange"];
+      const result = fruits.join("&"); // "&".join(fruits) python
+      console.log(result);
+
+      //split(string: string, limit?: number)
+      console.log(result.split("&")); // "apple&banana&orange".split("&") python
+      console.log(typeof fruits);
+      console.log(typeof result);
+
+      //concat(...items: ConcatArray<T>[])
+      const arr1 = [1, 2, 3, 4];
+      const arr2 = [4, 5, 6, 7];
+      const arr3 = arr1.concat(arr2);
+      console.log(arr3);
+
+      //slice(start?: number, end?: number)
+      const array = [1, 2, 3, 4, 5];
+      const result1 = array.slice(3);
+      console.log(result1); // [4, 5]
+      const result2 = array.slice(3, 4);
+      console.log(result2); // [4]
+      const result3 = array.slice(0, 2);
+      console.log(result3); // [1, 2]
+
+      //splice(start: number, deleteCount?: number)
+
+      const result4 = array.splice(2, 2);
+      console.log(array); // [1, 2, 5] - 원본 데이터 수정
+      console.log(result4); // [3, 4] - 2번 인덱스 ~ 요소 2개
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>

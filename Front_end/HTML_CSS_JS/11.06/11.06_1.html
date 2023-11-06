@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      //클래스 선언
+      class Rectangle {}
+      // 클래스 표현식(익명)
+      const Rect = class {};
+      //클래스 표현식 (이름 지정)
+      const Rectangle = class Rectangle {};
+
+      //생성자 - 객체 생성 시 속성 생성 또는 값을 할당(초기화)
+      //클래스와 이름이 같은 생성자 한개만 존재
+      class Rectangle {
+        //   Rectangle(width, height) {
+        //     this.width = width;
+        //     this.height = height;
+        //   }
+        constructor(width, height) {
+          this.height = height;
+          this.width = width;
+        }
+      }
+
+      const rec = new Rectangle(10, 20);
+      console.log(rec);
+      console.log(rec.height, rec.width);
+    </script>
+    <title>11.06_1</title>
+  </head>
+  <body>
+    class
+  </body>
+</html>

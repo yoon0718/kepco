@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      //map<U>(callbackfn: (value: T, index: number, array: T[])
+      const arr = [1, 2, 3, 4, 5];
+
+      const newArr = arr.map(function (value, idx, arr) {
+        console.log(value, idx, arr);
+        return value;
+      });
+
+      console.log(`old array: ${arr}`);
+      console.log(`new array: ${newArr}`);
+
+      //reduce(callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: T[])
+      const result = arr.reduce(function (pv, cv, idx, arr) {
+        console.log(pv, cv, idx, arr);
+        return pv + cv;
+      });
+      const result1 = arr.reduce((pv, nv) => pv + nv);
+
+      console.log(`array: ${arr}`);
+      console.log(`result: ${result}`);
+      console.log(`result: ${result1}`);
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>

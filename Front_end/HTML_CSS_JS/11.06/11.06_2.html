@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      class Rectangle {
+        constructor(height, width) {
+          this.height = height;
+          this.width = width;
+        }
+
+        get height() {
+          return this._height;
+        }
+        set height(value) {
+          this._height = value;
+        }
+      }
+
+      const rec = new Rectangle(10, 20);
+      console.log(rec);
+      console.log(rec.height, rec.width);
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      const user = { name: "Bill", age: 20 };
+
+      const user2 = {};
+      for (const key in user) {
+        user2[key] = user[key];
+      }
+      console.log(user);
+      console.log(user2);
+      user2.name = "Steve";
+      console.log(user);
+      console.log(user2);
+
+      const user3 = {};
+      Object.assign(user3, user);
+      user3.age = 30;
+      console.log(user3);
+
+      console.log(user);
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>

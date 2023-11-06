@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      class Student {
+        constructor(name, age, enrolled, score) {
+          this.name = name;
+          this.age = age;
+          this.enrolled = enrolled;
+          this.score = score;
+        }
+      }
+      const students = [
+        new Student("A", 29, true, 45),
+        new Student("B", 28, false, 80),
+        new Student("C", 30, true, 90),
+        new Student("D", 40, false, 66),
+        new Student("E", 18, true, 90),
+      ];
+
+      //학생들의 점수만 요소로 가지는 새로운 배열 생성하기
+      const newArr = students.map(function (value) {
+        return value.score;
+      });
+      const newArr1 = students.map((value) => value.score);
+      console.log(newArr);
+      console.log(newArr1);
+
+      //점수가 50점 이상인 학생의 이름을 결과와 같이 문자열로 출력하기
+      //(filter / map / join)
+
+      const result = students
+        .filter((value) => value.score >= 50)
+        .map((value) => value.name);
+      console.log(result);
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>

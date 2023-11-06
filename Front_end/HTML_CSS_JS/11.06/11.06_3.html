@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      class User {
+        constructor(firstName, lastName, age) {
+          this.firstName = firstName;
+          this.lastName = lastName;
+          this.age = age;
+        }
+        get age() {
+          return this._age;
+        }
+        set age(value) {
+          if (value < 0) {
+            this._age = 0;
+          } else {
+            this._age = value;
+          }
+        }
+      }
+      const u = new User("yoon", "yeorok", 30);
+      console.log(u);
+      console.log(u.firstName, u.lastName, u.age);
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>

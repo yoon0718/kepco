@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      class Student {
+        constructor(name, age, enrolled, score) {
+          this.name = name;
+          this.age = age;
+          this.enrolled = enrolled;
+          this.score = score;
+        }
+      }
+      const students = [
+        new Student("A", 29, true, 45),
+        new Student("B", 28, false, 80),
+        new Student("C", 30, true, 90),
+        new Student("D", 40, false, 66),
+        new Student("E", 18, true, 90),
+      ];
+      //점수가 90점인 1명(첫번째)의 학생 정보 찾아내기 (find)
+      let result = students.find((value, index, arr) => {
+        return value.score == 90;
+      });
+      console.log(result);
+
+      //수업에 등록(enrolled)되어 있는 모든 학생의 정보 찾아내기 (filter)
+      let result1 = students.filter((value, index, arr) => {
+        return value.enrolled == true;
+      });
+      console.log(result1);
+
+      //점수가 50점 미만인 학생이 있는지 확인하기 (some)
+      let result2 = students.some((value, index, arr) => {
+        return value.score < 50;
+      });
+      console.log(result2);
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>

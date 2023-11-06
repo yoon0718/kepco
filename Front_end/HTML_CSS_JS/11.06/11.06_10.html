@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      const animals = ["🐶", "🐱", "🐷"];
+      //인덱스를 이용한 접근
+      console.log(animals[0]);
+      //반복문을 이용한 요소 제어
+      for (var i = 0; i < animals.length; i++) {
+        console.log(animals[i]);
+      }
+      //index(key)를 알아낸 후 value 확인 (for … in)
+      for (key in animals) {
+        console.log(animals[key]);
+      }
+      //모든 value를 순서대로 하나씩 꺼내어 확인 (for … of)
+      for (const value of animals) {
+        console.log(value);
+      }
+      //모든 요소(key/value)를 순서대로 하나씩 꺼내어 확인 (forEach)
+      animals.forEach(function (animal, index, array) {
+        console.log(`${animal} | ${index} | ${array}`);
+      });
+
+      animals.forEach((animal, index, array) => {
+        console.log(`${animal} | ${index} | ${array}`);
+      });
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
