@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      const obj = document.createElement("h1");
+      obj.textContent = "plus"; // const text = document.createTextNode('Header'); // obj.appendChild(text);
+      const obj2 = document.createElement("h2");
+      obj2.textContent = "minus";
+      document.addEventListener("DOMContentLoaded", () => {
+        document.body.appendChild(obj);
+        document.body.appendChild(obj2);
+      });
+      obj.setAttribute("id", "title");
+      obj2.setAttribute("id", "title1");
+      let i = 0;
+      window.onload = function () {
+        const h1 = document.querySelector("#title");
+        h1.addEventListener("click", function () {
+          console.log("click");
+          i += 1;
+          const obj3 = document.createElement("h6");
+          obj3.textContent = `${i}번 클릭했습니다.`;
+          document.body.appendChild(obj3);
+        });
+        const h2 = document.querySelector("#title1");
+        h2.addEventListener("click", function () {
+          i -= 1;
+          const obj4 = document.createElement("h6");
+          obj4.textContent = `${i}번 클릭했습니다.`;
+          document.body.appendChild(obj4);
+        });
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>

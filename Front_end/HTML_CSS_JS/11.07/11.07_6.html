@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // function getApple() {
+      //   return new Promise((resolve) => {
+      //     setTimeout(resolve("🍎"), 4000);
+      //   });
+      // }
+      // function getkiwi() {
+      //   return new Promise((resolve) => {
+      //     setTimeout(resolve("🥝"), 4000);
+      //   });
+      // }
+      // function getMango() {
+      //   return new Promise((resolve) => {
+      //     setTimeout(resolve("🥭"), 5000);
+      //   });
+      // }
+
+      //모듈화(중복코드 제거)
+      function delay(ms) {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+      }
+      async function getApple() {
+        await delay(1000);
+        return "🍎";
+      }
+      async function getkiwi() {
+        await delay(1000);
+        return "🥝";
+      }
+      async function getMango() {
+        await delay(1000);
+        return "🥭";
+      }
+
+      // async / await 적용 전
+      // function sell() {
+      //   return getApple().then((apple) => {
+      //     return getkiwi().then((kiwi) => {
+      //       return getMango().then((Mango) => `${apple} + ${kiwi} + ${Mango}`);
+      //     });
+      //   });
+      // }
+      // sell().then((result) => console.log(result));
+      // console.log(sell());
+
+      //async / await 적용 후
+      async function sell() {
+        const apple = await getApple();
+        const kiwi = await getkiwi();
+        const Mango = await getMango();
+        return `${apple} + ${kiwi} + ${Mango}`;
+      }
+      sell().then((result) => console.log(result));
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>

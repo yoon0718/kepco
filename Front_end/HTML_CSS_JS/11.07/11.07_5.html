@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      function getApple() {
+        return new Promise((resolve) => {
+          setTimeout(resolve("🍎"), 4000);
+        });
+      }
+      function sellApple() {
+        return new Promise((resolve) => {
+          getApple().then((apple) => resolve(apple));
+        });
+      }
+      sellApple().then((result) => console.log(result));
+      console.log(sellApple());
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
