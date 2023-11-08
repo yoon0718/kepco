@@ -30,10 +30,28 @@
 
     <script>
       window.onload = function () {
+        let a = 0;
         document.querySelectorAll("div > div").forEach((e) => {
           e.addEventListener("click", (e) => {
-            let current = e.currentTarget.value;
-            console.log(current);
+            let current = e.currentTarget.textContent;
+            const obj = document.querySelector("#projector");
+
+            if (current == "C") {
+              obj.innerHTML = "";
+            } else if (current == "=") {
+              obj.innerHTML = eval(obj.textContent);
+              a = 1;
+              console.log(a, "a");
+            } else {
+              if (a == 1) {
+                obj.innerHTML = "";
+                a = 0;
+                console.log(a, "b");
+              }
+              obj.innerHTML += current;
+              console.log(a, "c"); //이거 숫자랑 연산자랑 별도로 만들어줘야함 일어나서 가자마자 담배피지말고 하자
+            }
+            console.log(typeof obj.textContent);
           });
         });
       };
@@ -41,7 +59,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="projector">daf</div>
+    <div id="projector"></div>
     <div class="wrapper">
       <div>7</div>
       <div>8</div>
