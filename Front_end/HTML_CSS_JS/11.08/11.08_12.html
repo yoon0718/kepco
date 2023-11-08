@@ -12,7 +12,6 @@
       }
       #projector {
         height: 50px;
-        background-color: rgb(207, 232, 220);
         border: 2px solid rgb(79, 185, 227);
         padding: 10px;
         border-radius: 5px;
@@ -27,13 +26,17 @@
         padding: 10px;
         border-radius: 5px;
       }
-      #zero {
-        grid-column: 1 / 4;
-      }
     </style>
 
     <script>
-      window.onload = function () {};
+      window.onload = function () {
+        document.querySelectorAll("div > div").forEach((e) => {
+          e.addEventListener("click", (e) => {
+            let current = e.currentTarget.value;
+            console.log(current);
+          });
+        });
+      };
     </script>
     <title>Document</title>
   </head>
@@ -52,10 +55,11 @@
       <div>2</div>
       <div>3</div>
       <div>*</div>
-      <div id="zero">0</div>
+      <div>C</div>
+      <div>0</div>
+      <div>=</div>
       <div>/</div>
     </div>
     <h1></h1>
-    <button onclick="back()">Back</button>
   </body>
 </html>
