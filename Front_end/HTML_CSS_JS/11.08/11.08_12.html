@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .wrapper {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 50px 50px 50px 50px;
+      }
+      #projector {
+        height: 50px;
+        background-color: rgb(207, 232, 220);
+        border: 2px solid rgb(79, 185, 227);
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px 0px;
+        display: flex;
+        text-align: right;
+        align-items: center;
+      }
+      div > div {
+        background-color: rgb(207, 232, 220);
+        border: 2px solid rgb(79, 185, 227);
+        padding: 10px;
+        border-radius: 5px;
+      }
+      #zero {
+        grid-column: 1 / 4;
+      }
+    </style>
+
+    <script>
+      window.onload = function () {};
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="projector">daf</div>
+    <div class="wrapper">
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>+</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>-</div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>*</div>
+      <div id="zero">0</div>
+      <div>/</div>
+    </div>
+    <h1></h1>
+    <button onclick="back()">Back</button>
+  </body>
+</html>

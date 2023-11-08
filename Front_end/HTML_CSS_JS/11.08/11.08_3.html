@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      window.onload = function () {
+        const move = document.querySelector("h1");
+        move.style.position = "absolute";
+        let [x, y] = [0, 0];
+        const block = 20;
+        const print = function () {
+          move.style.left = `${x * block}px`;
+          move.style.top = `${y * block}px`;
+        };
+        print();
+
+        const [left, up, right, down] = [37, 38, 39, 40];
+        document.body.addEventListener("keydown", function (event) {
+          switch (event.keyCode) {
+            case left:
+              x -= 1;
+              break;
+            case up:
+              y -= 1;
+              break;
+            case right:
+              x += 1;
+              break;
+            case down:
+              y += 1;
+              break;
+          }
+          print();
+        });
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>🎈</h1>
+  </body>
+</html>

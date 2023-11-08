@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #projector {
+        background-color: rgb(207, 232, 220);
+        border: 2px solid rgb(79, 185, 227);
+        padding: 10px;
+        border-radius: 5px;
+        width: 30%;
+        text-align: center;
+        margin: 30px auto;
+      }
+      div > div {
+        text-align: center;
+        background-color: rgb(207, 232, 220);
+        border: 2px solid rgb(79, 185, 227);
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .wrapper {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 33% 33% 33%;
+      }
+    </style>
+
+    <script>
+      window.onload = function () {
+        document.querySelector("#projector").addEventListener("click", () => {
+          const size = 3;
+          persons = [
+            "윤여록",
+            "김수호",
+            "임태환",
+            "박정현",
+            "조가영",
+            "장성호",
+            "강건희",
+            "이윤주",
+            "이재빈",
+          ];
+          persons.sort(() => Math.random() - 0.5);
+          for (let i = 1; i <= persons.length; i++) {
+            document.querySelector(`.wrapper > div:nth-child(${i})`).innerHTML =
+              persons[i - 1];
+          }
+          /* const bigDiv = document.querySelector(".wrapper");
+          for (let i = 0; i < persons.length; i++) {
+            num = persons[i];
+            console.log(num, i);
+            const div = document.createElement("div");
+            const text = document.createTextNode(num);
+            bigDiv.appendChild(div);
+            div.appendChild(text);
+          }
+          // document.querySelectorAll('.wrapper > div').forEach(() => {
+
+          // })*/
+        });
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="projector">프로젝터</div>
+
+    <div class="wrapper">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

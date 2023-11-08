@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      window.onload = function () {
+        const input = document.querySelector("[name=search]");
+        input.addEventListener("focus", function (event) {
+          let search = event.currentTarget.value;
+          input.value += "#";
+          console.log(search);
+        });
+        input.addEventListener("keyup", function (event1) {
+          if (event1.keyCode == 32) {
+            input.value += ", #";
+          }
+        });
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    검색어 입력 : <input type="text" name="search" />
+  </body>
+</html>

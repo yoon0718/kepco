@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      table {
+        width: 50vw;
+        height: 50vh;
+        border-spacing: 0;
+        text-align: center;
+        font-size: 1.5em;
+      }
+      td {
+        border: 1px solid black;
+      }
+      tr:first-child td {
+        border-top: 3px solid black;
+      }
+      tr:last-child td {
+        border-bottom: 3px solid black;
+      }
+      td:first-child {
+        border-left: 3px solid black;
+      }
+      td:last-child {
+        border-right: 3px solid black;
+      }
+    </style>
+
+    <script>
+      window.onload = function () {
+        const size = 3;
+        const numbers = new Array();
+        for (let i = 1; i <= size * size; i++) {
+          numbers.push(i);
+        }
+
+        numbers.sort(() => Math.random() - 0.5);
+
+        const table = document.createElement("table");
+        let tr;
+        for (let i = 0; i < numbers.length; i++) {
+          if (i % 3 == 0) {
+            tr = document.createElement("tr");
+          }
+          num = numbers[i];
+          const td = document.createElement("td");
+          const text = document.createTextNode(num);
+          tr.appendChild(td);
+          td.appendChild(text);
+          table.appendChild(tr);
+        }
+        document.querySelector("#bingo").appendChild(table);
+
+        document.querySelectorAll("td").forEach((e) => {
+          e.addEventListener("click", () => {
+            if (e.style.backgroundColor == "white") {
+              e.style.backgroundColor = "lightgray";
+            } else {
+              e.style.backgroundColor = "white";
+            }
+          });
+        });
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="bingo"></div>
+  </body>
+</html>

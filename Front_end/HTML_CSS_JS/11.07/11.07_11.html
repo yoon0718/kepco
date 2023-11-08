@@ -8,30 +8,32 @@
       obj.textContent = "plus"; // const text = document.createTextNode('Header'); // obj.appendChild(text);
       const obj2 = document.createElement("h2");
       obj2.textContent = "minus";
+      const obj5 = document.createElement("h6");
       document.addEventListener("DOMContentLoaded", () => {
         document.body.appendChild(obj);
         document.body.appendChild(obj2);
+        document.body.appendChild(obj5);
       });
       obj.setAttribute("id", "title");
       obj2.setAttribute("id", "title1");
+
       let i = 0;
       window.onload = function () {
         const h1 = document.querySelector("#title");
         h1.addEventListener("click", function () {
           console.log("click");
           i += 1;
-          const obj3 = document.createElement("h6");
+          const obj3 = document.querySelector("h6");
           obj3.textContent = `${i}번 클릭했습니다.`;
-          document.body.appendChild(obj3);
         });
         const h2 = document.querySelector("#title1");
         h2.addEventListener("click", function () {
           i -= 1;
-          const obj4 = document.createElement("h6");
+          const obj4 = document.querySelector("h6");
           obj4.textContent = `${i}번 클릭했습니다.`;
-          document.body.appendChild(obj4);
         });
       };
+      document.body.onselectstart = () => false;
     </script>
     <title>Document</title>
   </head>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      window.onload = () => {
+        document.querySelector("button").addEventListener("click", () => {
+          const target = document.querySelector(".target");
+          if (document.querySelector("img") == null) {
+            const img = document.createElement("img");
+
+            img.setAttribute("src", "http://ggoreb.com/images/choco/1.jpg");
+            target.appendChild(img);
+          } else {
+            const img2 = document.querySelector("img");
+            target.removeChild(img2);
+          }
+        });
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="d-grid">
+        <button type="button" class="btn btn-primary btn-block">
+          이미지 불러오기
+        </button>
+      </div>
+    </div>
+    <div class="target"></div>
+  </body>
+</html>
