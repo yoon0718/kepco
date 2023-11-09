@@ -4,34 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+      body {
+        height: 100vh;
+        width: 100wh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #number {
+        height: auto;
+        width: auto;
+        padding: 20px;
+        border: solid 2px black;
+        border-radius: 5px;
+        background-color: lightgrey;
+      }
       .wrapper {
         display: grid;
         grid-gap: 10px;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 50px 50px 50px 50px;
+        grid-template-columns: 100px 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px 100px;
       }
       #projector {
-        height: 50px;
-        border: 2px solid rgb(79, 185, 227);
+        color: white;
+        font-size: 50px;
+        height: 100px;
+        border: 2px solid rgb(255, 255, 255);
+        background-color: black;
         padding: 10px;
         border-radius: 5px;
         margin: 10px 0px;
         display: flex;
-        text-align: right;
+        justify-content: right;
         align-items: center;
       }
-      div > div {
-        background-color: rgb(207, 232, 220);
+      div > div > div {
+        background-color: rgb(255, 255, 255);
         border: 2px solid rgb(79, 185, 227);
         padding: 10px;
         border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     </style>
 
     <script>
       window.onload = function () {
         let a = 0;
-        document.querySelectorAll("div > div").forEach((e) => {
+        document.querySelectorAll("div > div >div").forEach((e) => {
           e.addEventListener("click", (e) => {
             let current = e.currentTarget.textContent;
             const obj = document.querySelector("#projector");
@@ -41,17 +62,34 @@
             } else if (current == "=") {
               obj.innerHTML = eval(obj.textContent);
               a = 1;
-              console.log(a, "a");
+            } else if (current == "+") {
+              obj.innerHTML += current;
+              a = 0;
+            } else if (current == "-") {
+              obj.innerHTML += current;
+              a = 0;
+            } else if (current == "*") {
+              obj.innerHTML += current;
+              a = 0;
+            } else if (current == "/") {
+              obj.innerHTML += current;
+              a = 0;
             } else {
               if (a == 1) {
                 obj.innerHTML = "";
                 a = 0;
-                console.log(a, "b");
+                obj.innerHTML += current;
+              } else {
+                if (
+                  (obj.textContent == "" || obj.textContent == "0") &&
+                  current == "0"
+                ) {
+                  obj.innerHTML = "";
+                } else {
+                  obj.innerHTML += current;
+                }
               }
-              obj.innerHTML += current;
-              console.log(a, "c"); //이거 숫자랑 연산자랑 별도로 만들어줘야함 일어나서 가자마자 담배피지말고 하자
             }
-            console.log(typeof obj.textContent);
           });
         });
       };
@@ -59,25 +97,26 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="projector"></div>
-    <div class="wrapper">
-      <div>7</div>
-      <div>8</div>
-      <div>9</div>
-      <div>+</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
-      <div>-</div>
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>*</div>
-      <div>C</div>
-      <div>0</div>
-      <div>=</div>
-      <div>/</div>
+    <div id="number">
+      <div id="projector"></div>
+      <div class="wrapper">
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>+</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>-</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>*</div>
+        <div>C</div>
+        <div>0</div>
+        <div>=</div>
+        <div>/</div>
+      </div>
     </div>
-    <h1></h1>
   </body>
 </html>
