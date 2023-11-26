@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -535,19 +535,32 @@
                   <div>
                     <form
                       class="container"
-                      action="/contentPlus/create"
-                      method="get"
+                      th:action="@{/contentPlus}"
+                      th:object="${form}"
+                      method="post"
                     >
                       <div>
-                        <label>nickname</label><br />
-                        <input type="text" name="nickname" />
+                        <label for="nickname">nickname</label><br />
+                        <input
+                          type="text"
+                          id="nickname"
+                          name="nickname"
+                          th:field="*{nickname}"
+                        />
                       </div>
                       <div>
-                        <label>content</label><br />
-                        <textarea rows="3" name="content"></textarea>
+                        <label for="content">content</label><br />
+                        <textarea
+                          rows="3"
+                          id="content"
+                          name="content"
+                          th:field="*{content}"
+                        ></textarea>
                       </div>
                       <button type="submit">submit</button>
+                      <a type="button" th:href="@{/}">cancel</a>
                     </form>
+
                     <div class="page_content_footer"></div>
                   </div>
                 </div>

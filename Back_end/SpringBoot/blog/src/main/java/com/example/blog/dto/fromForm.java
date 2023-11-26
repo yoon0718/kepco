@@ -11,7 +11,7 @@ public class fromForm {
         this.content = content;
     }
 
-    public form toEntity(){
-        return new form(nickname, content);
-    }
+    // public form toEntity(){
+    //     return new form(nickname, content);
+    // }
 }
