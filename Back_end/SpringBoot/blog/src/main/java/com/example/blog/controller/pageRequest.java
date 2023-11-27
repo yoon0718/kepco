@@ -32,8 +32,14 @@ public class pageRequest {
     }
 
     @GetMapping("/contentPlus")
-    public String contentPlus(Model model){
-        model.addAttribute("form", new form());
+    public String contentPlus(Model model, @RequestParam(required = false) Long seq){
+        if(seq == null){
+            model.addAttribute("form", new form());
+        }else{
+            form form = formrepository.findById(seq).orElse(null);
+            model.addAttribute("form", form);
+        }
+        
         return "html/contentPlus";
     }
 

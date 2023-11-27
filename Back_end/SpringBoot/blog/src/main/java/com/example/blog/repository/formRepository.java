@@ -8,5 +8,5 @@ import com.example.blog.entitiy.form;
 
 @Repository
 public interface formRepository extends JpaRepository<form, Long> {
-
+    
 } 

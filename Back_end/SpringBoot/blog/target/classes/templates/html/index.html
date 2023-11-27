@@ -563,7 +563,7 @@
                               </div>
                               <div>
                                 <div class="main_title_more">
-                                  <div>
+                                  <!-- <div>
                                     <a
                                       th:href="/contentUpdate(seq = ${form.seq})"
                                       >수정</a
@@ -573,6 +573,14 @@
                                       th:href="/contentDelete(seq = ${form.seq})"
                                       >삭제</a
                                     >
+                                  </div> -->
+                                  <div>
+                                    <a
+                                      th:href="@{/contentPlus(seq=${form.seq})}"
+                                      >수정</a
+                                    >
+                                    /
+                                    <a th:href="@{/(seq=${form.seq})}">삭제</a>
                                   </div>
                                   <!-- <svg
                                     aria-label="옵션 더 보기"
@@ -718,7 +726,11 @@
                                   <div class="main_text_c_content">
                                     <div>
                                       <div class="content_m count_like">
-                                        <a href=""><span>wang2amja</span></a>
+                                        <a href=""
+                                          ><span
+                                            th:text="${form.nickname}"
+                                          ></span
+                                        ></a>
                                       </div>
                                       <span th:text="${form.content}"></span>
                                     </div>

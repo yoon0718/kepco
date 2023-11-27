@@ -138,7 +138,7 @@ button {
 }
 .page_content_main_title > div:nth-child(3) {
   height: 24px;
-  width: 74px;
+  width: auto;
 }
 .main_title_img {
   height: 40px;
@@ -158,7 +158,7 @@ button {
 }
 .main_title_center {
   height: 18px;
-  width: 340px;
+  width: 320px;
   justify-content: flex-start;
   font-weight: 600;
 }
@@ -375,6 +375,7 @@ button {
 .page_sub2_footer_text_list {
   margin-right: 8.6px;
 }
+
 .content_plus {
   font-weight: bold;
 }
