@@ -580,7 +580,10 @@
                                       >수정</a
                                     >
                                     /
-                                    <a th:href="@{/(seq=${form.seq})}">삭제</a>
+                                    <a
+                                      th:href="@{/delete/{seq}(seq=${form.seq})}"
+                                      >삭제</a
+                                    >
                                   </div>
                                   <!-- <svg
                                     aria-label="옵션 더 보기"

@@ -1,7 +1,5 @@
 package com.example.blog.controller;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,14 +7,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.example.blog.dto.fromForm;
 import com.example.blog.entitiy.form;
 import com.example.blog.repository.formRepository;
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 
 @Controller
@@ -26,9 +22,18 @@ public class pageRequest {
 
     @GetMapping("/")
     public String home(Model model){
+        
         List<form> forms = formrepository.findAll();
         model.addAttribute("form", forms);
+        
+        
         return "html/index";
+    }
+    
+    @GetMapping("/delete/{seq}")
+    public String contentDelete(Model model, @PathVariable Long seq) {
+        formrepository.deleteById(seq);
+        return "redirect:/";
     }
 
     @GetMapping("/contentPlus")
