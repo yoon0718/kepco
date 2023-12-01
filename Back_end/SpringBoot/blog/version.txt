@@ -1,0 +1,22 @@
+version1 -> 
+session 없이 crud구현했다가 망해서 다시 함
+session 있는 상태에서 게시글 추가시 session.kuser.userid에 맞는 게시글만 수정/삭제 표시
+
+version2 ->
+session 로그인 한 상태에서 게시글 추가(사진포함) 가능 session.kuser.userid에 맞는 게시글 UD 가능
+
+version3 ->
+게시글 seq에 맞는 댓글 DB저장 및 메인페이지에 띄우기
+게시글 삭제시 댓글도 같이 삭제(comment table의 seq foreign키가 form table의 seq primary키를 참조하도록 DB설정) 
+
+version4 ->
+유저 댓글 삭제, 가입페이지 이동, 비밀번호 찾기 이동, 회원가입, 회원가입중복확인
+, 회원가입빈칸확인, 아이디입력오류확인, 전환확인
+
+
+1. C드라이브에 back_end 폴더 생성 후 그 안에 blog폴더 생성하고 넣어줘야 함.
+2. sql -> 
+kuser table의 primary key - userid랑 form table의 foreign-key - userid 연결
+kuser table의 primary key - userid랑 comment table의 foreign-key - userid 연결
+form table의 primary key - seq랑 comment table의 foreign-key - seq 연결
+전부 delete 될때 casecade 설정
