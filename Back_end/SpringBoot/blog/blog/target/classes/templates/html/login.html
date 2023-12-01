@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      data-default-icon="https://static.cdninstagram.com/rsrc.php/y4/r/QaBlI0OZiks.ico"
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://static.cdninstagram.com/rsrc.php/y4/r/QaBlI0OZiks.ico"
+    />
+    <link
+      rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="login.css" />
+    <script defer src="login.js"></script>
+
+    <title>kepcogram</title>
+  </head>
+  <body>
+    <div>
+      <main class="main">
+        <article class="first_frame content">
+          <div class="content left">
+            <img id="imgfirst" src="home-phones.png" />
+            <div id="imageContainer"></div>
+          </div>
+          <div class="content right">
+            <div class="login_first content border">
+              <div class="logo content">
+                <div class="logoimg">
+                  <img class="logoimg" src="kepcogram_black.png" />
+                </div>
+              </div>
+              <div class="loginmain content">
+                <form class="loginmain_a" th:action="@{/login}" method="post">
+                  <div class="loginmain_b content">
+                    <div class="idpassword">
+                      <div class="idpassword_a">
+                        <input
+                          class="inputid"
+                          maxlength="75"
+                          type="text"
+                          placeholder="전화번호, 사용자 이름 또는 이메일"
+                          name="userid"
+                          autocapitalize="off"
+                        />
+                      </div>
+                    </div>
+                    <div class="idpassword">
+                      <div class="idpassword_a">
+                        <input
+                          class="inputid"
+                          type="password"
+                          maxlength="75"
+                          placeholder="비밀번호"
+                          name="userpassword"
+                          autocapitalize="off"
+                        />
+                        <p class="fa fa-eye fa-lg"></p>
+                      </div>
+                    </div>
+                    <div class="loginbutton">
+                      <button class="button" type="submit">
+                        <div>로그인</div>
+                      </button>
+                    </div>
+                    <div class="loginmain_b_1">
+                      <div class="loginmain_b_1_main">
+                        <div class="loginmain_b_1_main_line"></div>
+                        <div class="loginmain_b_1_main_text">또는</div>
+                        <div class="loginmain_b_1_main_line"></div>
+                      </div>
+                    </div>
+                    <div class="loginmain_b_2">
+                      <a th:href="@{/remember2}"
+                        ><div>
+                          <span class="facelo1"
+                            ><img src="facebooklogo.png"
+                          /></span>
+                          <span class="facelo2">Facebook으로 로그인</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="loginmain_c content">
+                    <div>
+                      <a th:href="@{/remember}">비밀번호를 잊으셨나요? </a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="login_second content border">
+              <span
+                ><p>계정이 없으신가요?</p>
+                <a th:href="@{/createUser}">가입하기</a></span
+              >
+            </div>
+            <div class="login_third">
+              <div><span>앱을 다운로드하세요.</span></div>
+
+              <div>
+                <a href=""><img src="googleplay.png" /></a>
+                <a href=""><img src="microsoft.png" /></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </main>
+      <footer class="footer">
+        <div>
+          <div class="footerFirst">
+            <span class="footerText"><a href="">Meta</a></span>
+            <span class="footerText"><a href="">소개</a></span>
+            <span class="footerText"><a href="">블로그</a></span>
+            <span class="footerText"><a href="">채용 정보</a></span>
+            <span class="footerText"><a href="">도움말</a></span>
+            <span class="footerText"><a href="">API</a></span>
+            <span class="footerText"><a href="">개인정보처리방침</a></span>
+            <span class="footerText"><a href="">약관</a></span>
+            <span class="footerText"><a href="">위치</a></span>
+            <span class="footerText"><a href="">lnstagram Lite</a></span>
+            <span class="footerText"><a href="">Threads</a></span>
+            <span class="footerText"
+              ><a href="">연락처 업로드 & 비사용자</a></span
+            >
+            <span class="footerText"><a href="">Meta Verified</a></span>
+          </div>
+          <div class="footerSecond">
+            <!-- <span class="footerText">한국어</span> -->
+            <div class="dropdown">
+              <button class="language" type="button" data-toggle="dropdown">
+                한국어<span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">한국어</a></li>
+                <li><a href="#">한국어</a></li>
+                <li><a href="#">한국어</a></li>
+                <li><a href="#">한국어</a></li>
+                <li><a href="#">한국어</a></li>
+                <li><a href="#">한국어</a></li>
+                <li><a href="#">한국어</a></li>
+                <li><a href="#">한국어</a></li>
+                <li><a href="#">한국어</a></li>
+                <li><a href="#">한국어</a></li>
+                <li><a href="#">한국어</a></li>
+                <li><a href="#">한국어</a></li>
+                <li><a href="#">한국어</a></li>
+                <li><a href="#">한국어</a></li>
+                <li><a href="#">한국어</a></li>
+              </ul>
+            </div>
+            <span class="footerText">&copy;2023 instagram from Meta</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
