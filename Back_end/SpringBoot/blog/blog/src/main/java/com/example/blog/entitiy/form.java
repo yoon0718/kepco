@@ -22,6 +22,7 @@ public class form {
     private String content;
     private String originalFileName;
     private String uuid;
+    private String userImg;
     
     
     LocalDateTime now = LocalDateTime.now();

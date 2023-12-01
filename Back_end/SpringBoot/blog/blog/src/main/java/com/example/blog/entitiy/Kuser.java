@@ -11,4 +11,5 @@ public class Kuser {
     String userId;
     String userPassword;
     String userName;
+    String Uuid;
 }

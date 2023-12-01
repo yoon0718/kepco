@@ -548,6 +548,12 @@
                           name="userid"
                           th:value="${session.kuser.userId}"
                         />
+                        <input
+                          type="hidden"
+                          id="usering"
+                          name="userimg"
+                          th:value="${session.kuser.uuid}"
+                        />
                       </div>
                       <div>
                         <label for="content">content</label><br />

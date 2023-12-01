@@ -13,10 +13,21 @@ version4 ->
 유저 댓글 삭제, 가입페이지 이동, 비밀번호 찾기 이동, 회원가입, 회원가입중복확인
 , 회원가입빈칸확인, 아이디입력오류확인, 전환확인
 
+version5 ->
+회원가입시 사진 업로드, 로그인 후 계정에 맞는 계정이미지 변경 및 게시글 등록시 게시글 작성자 이미지 저장 및 표현
+
 
 1. C드라이브에 back_end 폴더 생성 후 그 안에 blog폴더 생성하고 넣어줘야 함.
+
+
 2. sql -> 
+사용자 root 비밀번호 1234 세션 hr
+데이터 베이스 spring 생성
+
 kuser table의 primary key - userid랑 form table의 foreign-key - userid 연결
 kuser table의 primary key - userid랑 comment table의 foreign-key - userid 연결
 form table의 primary key - seq랑 comment table의 foreign-key - seq 연결
 전부 delete 될때 casecade 설정
+
+하고싶은것 ->
+댓글 제자리 수정, alert 생성(삭제, 게시글 생성, 게시글 수정)

@@ -545,7 +545,7 @@
                                 <div class="main_title_img">
                                   <img
                                     class="main_title_friend_img"
-                                    src="profilimg4.png"
+                                    th:src="'/contentImages/'+${form.userImg}"
                                   />
                                 </div>
                               </div>
@@ -833,7 +833,10 @@
               <div class="content">
                 <div class="img_size">
                   <div>
-                    <img class="page_sub2_img" src="profilimg4.png" />
+                    <img
+                      class="page_sub2_img"
+                      th:src="'/contentImages/'+${session.kuser.uuid}"
+                    />
                   </div>
                 </div>
                 <div class="name content">

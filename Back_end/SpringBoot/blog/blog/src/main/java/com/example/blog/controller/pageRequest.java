@@ -71,17 +71,21 @@ public class pageRequest {
     public String formSubmit(@RequestParam("userid") String userid,
                             @RequestParam("content") String content,
                             @RequestParam("file") MultipartFile mFile,
+                            @RequestParam("userimg") String userimg,
                             @RequestParam(required = false) Long seq, Model model){
         form form = new form();
         String saveOFolder = "C:/Back_end/blog/blog/src/main/resources/static/contentImages/";
         String uid = UUID.randomUUID().toString();
         String oName = mFile.getOriginalFilename();
         File saveFile = new File(saveOFolder + uid);
+        System.out.println(mFile);
+        System.out.println("이게뭐람");
         form.setSeq(seq);
         form.setUserId(userid);
         form.setContent(content);
         form.setOriginalFileName(oName);
         form.setUuid(uid);
+        form.setUserImg(userimg);
         try {
             mFile.transferTo(saveFile);
             formrepository.save(form);

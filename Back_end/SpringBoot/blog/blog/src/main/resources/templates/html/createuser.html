@@ -44,7 +44,9 @@
                   class="loginmain_a"
                   th:action="@{/createUser}"
                   method="post"
+                  enctype="multipart/form-data"
                 >
+                  <input type="file" id="file" name="file" multiple />
                   <div class="loginmain_b content">
                     <div class="idpassword">
                       <div class="idpassword_a">
@@ -84,6 +86,7 @@
                         <p class="fa fa-eye fa-lg"></p>
                       </div>
                     </div>
+
                     <div class="loginbutton">
                       <button class="button" type="submit">
                         <div>회원가입</div>
@@ -99,22 +102,16 @@
                     <div class="loginmain_b_2">
                       <a th:href="@{/login}"
                         ><div>
-                          
                           <span class="facelo2">로그인하기</span>
                         </div>
                       </a>
                     </div>
                   </div>
-
-                  
+                  <div class="login_second content border"></div>
                 </form>
               </div>
             </div>
-            <div class="login_second content border">
-              <span
-                >	&gt;&nbsp;&nbsp;.&nbsp;&nbsp;&lt;
-              
-            </div>
+            <span> &gt;&nbsp;&nbsp;.&nbsp;&nbsp;&lt; </span>
             <div class="login_third">
               <div><span>앱을 다운로드하세요.</span></div>
 
