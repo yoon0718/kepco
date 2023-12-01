@@ -308,7 +308,10 @@
               <div>
                 <a class="in" href="">
                   <div>
-                    <img class="myprofil" src="profilimg4.png" />
+                    <img
+                      class="myprofil"
+                      th:src="'/contentImages/'+${session.kuser.uuid}"
+                    />
                   </div>
                   <div>프로필</div>
                 </a>
@@ -584,7 +587,10 @@
               <div class="content">
                 <div class="img_size">
                   <div>
-                    <img class="page_sub2_img" src="profilimg4.png" />
+                    <img
+                      class="page_sub2_img"
+                      th:src="'/contentImages/'+${session.kuser.uuid}"
+                    />
                   </div>
                 </div>
                 <div class="name content">
