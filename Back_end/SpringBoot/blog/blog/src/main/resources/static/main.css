@@ -382,14 +382,16 @@ input[type="file"],
 .change {
   height: 13px;
   width: 36px;
-  padding: 15px 0px 15px 15px;
+  padding: 5px 0px 15px 15px;
   font-size: 12px;
   font-weight: 600;
   color: rgb(0, 149, 246);
 }
 .change > a {
   color: rgb(0, 149, 246);
+  display: inline-block;
 }
+
 .page_sub2_suggestion {
   height: 351px;
   width: 319px;

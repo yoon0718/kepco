@@ -25,9 +25,9 @@ public class loginController {
     public String alert(){
         return "html/alert";
     }
-    @GetMapping("/commentAlert")
+    @GetMapping("/createUserFail")
     public String commentAlert(){
-        return "html/commentAlert";
+        return "html/createUserFail";
     }
     @GetMapping("/createUserSuccess")
     public String createUserSuccess(){
@@ -86,7 +86,7 @@ public class loginController {
         System.out.println("왕;ㅣ리노");
         String oName = mFile.getOriginalFilename();
         if(userid == "" || userpassword == "" || username == "" || oName == ""){
-            return "html/commentAlert";
+            return "html/createUserFail";
         }
         else{ 
             int count = userRepository.findByUserId(userid).size();

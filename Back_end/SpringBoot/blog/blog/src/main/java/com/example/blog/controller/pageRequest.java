@@ -13,8 +13,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.example.blog.entitiy.Kuser;
 import com.example.blog.entitiy.comment;
 import com.example.blog.entitiy.form;
+import com.example.blog.repository.UserRepository;
 import com.example.blog.repository.commentRepository;
 import com.example.blog.repository.formRepository;
 
@@ -26,6 +28,8 @@ public class pageRequest {
     private formRepository formrepository;
     @Autowired
     private commentRepository commentRepository;
+    @Autowired
+    private UserRepository userRepository;
 
     @GetMapping("/")
     public String home(Model model){
@@ -92,7 +96,7 @@ public class pageRequest {
         } catch (IllegalStateException | IOException e) {
             e.printStackTrace();
         }
-        return "redirect:/";
+        return "html/contentPlusSuccess";
     }
 
     @GetMapping("/delete")
@@ -104,7 +108,7 @@ public class pageRequest {
         System.out.println(form);
         System.out.println("네번째");
         formrepository.delete(form);
-        return "redirect:/";
+        return "html/contentDelete";
     }
 
     @GetMapping("/deleteComment")
@@ -112,6 +116,15 @@ public class pageRequest {
         comment mycomment = new comment();
         mycomment.setCommentNumber(commentnumber);
         commentRepository.delete(mycomment);
-        return "redirect:/";
+        return "html/commentDelete";
+    }
+
+    @GetMapping("/userDelete")
+    public String userDelete(@RequestParam("userId") String userId){
+        Kuser kuser = new Kuser();
+        kuser.setUserId(userId);
+        System.out.println(kuser);
+        userRepository.delete(kuser);
+        return "html/userDeleteAlert";
     }
 }

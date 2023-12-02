@@ -846,7 +846,11 @@
                   <div th:text="${session.kuser.userId}"></div>
                   <div th:text="${session.kuser.userName}"></div>
                 </div>
-                <div class="change"><a th:href="@{/loginAlert}">전환</a></div>
+                <div class="change">
+                  <a th:href="@{/userDelete(userId=${session.kuser.userId})}"
+                    >탈퇴</a
+                  ><a th:href="@{/loginAlert}">전환</a>
+                </div>
               </div>
             </div>
             <div class="page_sub2_suggestion">

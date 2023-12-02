@@ -46,8 +46,10 @@
                   method="post"
                   enctype="multipart/form-data"
                 >
-                  <input type="file" id="file" name="file" multiple />
                   <div class="loginmain_b content">
+                    <div class="idpassword">
+                      <input type="file" id="file" name="file" multiple />
+                    </div>
                     <div class="idpassword">
                       <div class="idpassword_a">
                         <input
@@ -102,6 +104,7 @@
                     <div class="loginmain_b_2">
                       <a th:href="@{/login}"
                         ><div>
+                          <span> &gt;&nbsp;&nbsp;.&nbsp;&nbsp;&lt; </span><br />
                           <span class="facelo2">로그인하기</span>
                         </div>
                       </a>
@@ -111,7 +114,7 @@
                 </form>
               </div>
             </div>
-            <span> &gt;&nbsp;&nbsp;.&nbsp;&nbsp;&lt; </span>
+
             <div class="login_third">
               <div><span>앱을 다운로드하세요.</span></div>
 
